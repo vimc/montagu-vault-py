@@ -4,9 +4,13 @@ A Python wrapper around [montagu-vault](https://github.com/vimc/montagu-vault)
 Use like so:
 
 1. Add the submodule:
-   ```git submodule add https://github.com/vimc/montagu-vault-py <PATH>```
+   ```
+   git submodule add https://github.com/vimc/montagu-vault-py <PATH>
+   ```
 2. Add to your build/whatever script:
-   ```pip3 install -r <PATH>/requirements.txt```
+   ```
+   pip3 install -r <PATH>/requirements.txt
+   ```
 3. Import and use:
    ```
    from PATH import VaultClient
