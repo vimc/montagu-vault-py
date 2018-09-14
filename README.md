@@ -3,17 +3,17 @@ A Python wrapper around [montagu-vault](https://github.com/vimc/montagu-vault)
 
 Use like so:
 
-1. Add the submodule:
+1. Add the submodule add some local path, let's say `vault`
    ```
-   git submodule add https://github.com/vimc/montagu-vault-py <PATH>
+   git submodule add https://github.com/vimc/montagu-vault-py vault
    ```
 2. Add to your build/whatever script:
    ```
-   pip3 install -r <PATH>/requirements.txt
+   pip3 install -r vault/requirements.txt
    ```
 3. Import and use:
    ```
-   from PATH import VaultClient
+   from vault.vault import VaultClient
 
    vault = VaultClient()
    secret = vault.read_secret("secret/some/path")
