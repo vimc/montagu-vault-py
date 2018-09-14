@@ -2,7 +2,7 @@ import os
 
 import hvac
 
-from exceptions import MissingVaultToken
+from .exceptions import MissingVaultToken
 
 DEFAULT_VAULT_ADDR = "https://support.montagu.dide.ic.ac.uk:8200"
 
