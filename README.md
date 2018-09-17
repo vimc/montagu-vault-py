@@ -3,7 +3,7 @@ A Python wrapper around [montagu-vault](https://github.com/vimc/montagu-vault)
 
 Use like so:
 
-1. Add the submodule add some local path, let's say `vault`
+1. Add the submodule at some local path, let's say `vault`
    ```
    git submodule add https://github.com/vimc/montagu-vault-py vault
    ```
