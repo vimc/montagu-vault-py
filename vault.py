@@ -1,3 +1,5 @@
+from getpass import getpass
+
 import os
 
 import hvac
@@ -30,8 +32,8 @@ class VaultClient(object):
         vault_token = os.environ.get("VAULT_AUTH_GITHUB_TOKEN")
         if not vault_token:
             if self.interactive:
-                print("Please paste your vault GitHub access token: ", end="")
-                vault_token = input().strip()
+                prompt = "Please paste your vault GitHub access token: "
+                vault_token = getpass(prompt).strip()
             else:
                 raise MissingVaultToken()
         return vault_token
