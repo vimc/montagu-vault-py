@@ -26,7 +26,7 @@ class VaultClient(object):
         vault_url = os.environ.get("VAULT_ADDR", DEFAULT_VAULT_ADDR)
         vault_token = self._get_token()
         self.client = hvac.Client(url=vault_url)
-        self.client.auth_github(vault_token)
+        self.client.auth.github.login(token=vault_token)
 
     def _get_token(self):
         vault_token = os.environ.get("VAULT_AUTH_GITHUB_TOKEN")
