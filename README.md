@@ -1,6 +1,8 @@
 # montagu-vault-py
 A Python wrapper around [mrc-ide-vault](https://github.com/mrc-ide/mrc-ide-vault)
 
+*NOTE: this is a legacy module from when we had a separate vimc vault, and should not be used for new work*
+
 Use like so:
 
 1. Add the submodule at some local path, let's say `vault`
