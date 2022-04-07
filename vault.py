@@ -6,7 +6,7 @@ import hvac
 
 from .exceptions import MissingVaultToken
 
-DEFAULT_VAULT_ADDR = "https://support.montagu.dide.ic.ac.uk:8200"
+DEFAULT_VAULT_ADDR = "https://vault.dide.ic.ac.uk:8200"
 
 
 class VaultClient(object):
