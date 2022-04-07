@@ -1,5 +1,5 @@
 # montagu-vault-py
-A Python wrapper around [mrc-ide-vault](https://github.com/vimc/mrc-ide-vault)
+A Python wrapper around [mrc-ide-vault](https://github.com/mrc-ide/mrc-ide-vault)
 
 Use like so:
 
@@ -22,7 +22,7 @@ Use like so:
 # Interactive / non-interactive
 `VaultClient` takes an optional argument `interactive`, which defaults
 to `True`. If true, then if
-[the github token](https://github.com/vimc/mrc-ide-vault#authenticating-against-the-vault)
+[the github token](https://github.com/mrc-ide/mrc-ide-vault#authenticating-against-the-vault)
 is missing from the current environment, the user will be interactively
 prompted to enter their's. If it is false, a `MissingVaultToken`
 exception will be thrown.
